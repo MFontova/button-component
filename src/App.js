@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button } from './components/button/Button'
+import './App.css'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Button component</h1>
+      <div className='button-container'>
+        <section>
+          <Button>Default</Button>
+          <Button type='outline'>Default</Button>
+          <Button type='text'>Default</Button>
+        </section>
+        <section>
+          <Button disableShadow>Default</Button>
+        </section>
+        <section>
+          <Button disabled>Disabled</Button>
+          <Button disabled type='text'>Disabled</Button>
+        </section>
+        <section>
+          <Button color='primary' startIcon='add_shopping_cart'>Default</Button>
+          <Button color='secondary' endIcon='add_shopping_cart'>Default</Button>
+        </section>
+        <section>
+          <Button size='sm'>Default</Button>
+          <Button size='md'>Default</Button>
+          <Button size='lg'>Default</Button>
+        </section>
+        <section>
+          <Button color='default'>Default</Button>
+          <Button color='primary'>Default</Button>
+          <Button color='secondary'>Default</Button>
+          <Button color='danger'>Default</Button>
+        </section>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
