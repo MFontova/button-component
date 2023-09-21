@@ -1,6 +1,6 @@
-import { Button } from './components/button/Button'
 import './App.css'
-
+import { Footer } from './components/Footer/Footer'
+import { Button } from './components/Button/Button'
 function App () {
   return (
     <div className='App'>
@@ -79,6 +79,7 @@ function App () {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   )
 }
