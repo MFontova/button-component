@@ -1,6 +1,6 @@
 import './App.css'
 import { Footer } from './components/Footer/Footer'
-import { Button } from './components/Button/Button'
+import { Button } from './components/Buttona/Button'
 function App () {
   return (
     <div className='App'>
