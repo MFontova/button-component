@@ -2,7 +2,8 @@ import './Button.css'
 
 export const Button = (
   {
-    children, type = 'default',
+    children,
+    variant = 'default',
     disableShadow = false,
     disabled = false,
     startIcon = null,
@@ -12,7 +13,7 @@ export const Button = (
   }) => {
   return (
     <button
-      className={`button ${type} ${disableShadow ? 'disable-shadow' : ''} ${disabled ? 'disabled' : ''} ${size} color-${color}`}
+      className={`button ${variant} ${disableShadow ? 'disable-shadow' : ''} ${disabled ? 'disabled' : ''} ${size} color-${color}`}
       disabled={disabled}
     >
       {startIcon ? <span className='material-icons icon'>{startIcon}</span> : ''}
